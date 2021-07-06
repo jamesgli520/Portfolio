@@ -1,0 +1,169 @@
+/* set background color of body of webpage to black*/
+/* set text color of body to white */
+/* set font family of text to cursive */
+/* set padding of body to 50px */
+body{
+    background-color:black ;
+    color: white;
+    font-family: cursive;
+    padding: 50px;
+}
+
+/* The header element has class name header*/
+/*  display in flex mode*/
+/* jutify content to have space between element */
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* select all li tag in the element with class name header has following properties */
+/* displayed in inline block allow to set margin, padding, and width height as needed */
+.header li{
+    display: inline-block;
+    padding: 0px;
+    margin: 50px 0px 0px 50px;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* set all ul tag element with no marker */
+ul{
+    list-style: none;
+}
+
+/* set all a tag element have color white and no text decoration  */
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* each section has margin top with 50px */
+section{
+    margin-top: 50px;
+
+}
+
+
+/* set text font size of h1 tag to 80 px */
+h1{
+    font-size: 80px;
+    
+}
+
+/* set text font size of h2 tag to 35px */
+h2{
+    font-size: 35px;
+}
+
+/* select all p tag element in a parent element which has class name .about-me
+has following layout*/
+.about-me p{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0px 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+/* select the elements with following class name and set them to flex model */
+.about-me, .project, .contact-me{
+    display: flex;
+    
+}
+
+/* select the element with class name project has following layout */
+.project{
+    /* if flex items can not fit in one line they are focred onto multiple lines */
+    flex-wrap: wrap;
+}
+
+
+/* the element with class name .first-image-container */
+.first-image-container{
+    /* set position to relative with 50px margin to the left */
+    position:relative;
+    margin-left: 50px;
+}
+
+/* the element with class name .second-image-container */
+.second-image-container{
+    /* set position to relative with 172px margin to the left and 50 margin on top */
+    position:relative;
+    margin-left: 172px;
+    margin-top: 50px;
+}
+
+/* the element with class name .third-image-container */
+.third-image-container{
+    /* set position to relative with 50px margin to the left and 50 margin on top */
+    position:relative;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+/* the elements with class name .first-image-title, .second-image-title or third-image-title
+have folllwing layout*/
+.first-image-title, 
+.second-image-title, 
+.third-image-title{
+    /* set position to absolute  */ 
+    position: absolute;
+    bottom: 0px;
+    font-size: 25px;
+    background-color: black;
+    
+}
+
+/*select the img element of a parent element which has class name .first-image-container
+has following layout */
+.first-image-container Img{
+    /* set img display to inline block */
+    display: inline-block;
+    width: 1200px;
+    height: 600px;
+}
+
+/*select the img element of a parent element which has class name .second-image-container
+or third-image-container have following layout */
+.second-image-container Img,
+.third-image-container Img{
+    display: inline-block;
+    width: 575px;
+    height: 300px;
+}
+
+/* the pesudo class hover */
+/* select any img element with following clas name when hovered */
+.first-image-container:hover img,
+.second-image-container:hover img,
+.third-image-container:hover img{
+    box-shadow: 0 0 50px white;
+}
+
+/* select any li element with class name contact-me set margin left to 50px*/
+.contact-me li{
+    display: inline;
+    margin-left: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 25px;
+
+}
+
+/* set width and height of avatar */
+.avatar{
+    width: 300px;
+    height: 300px;
+}
+
+/* @media screen and (max-width: 992px) {
+    body{
+        flex: 0 0 20%;
+        
+    }
+} */
+
