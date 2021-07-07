@@ -19,7 +19,7 @@ This is a personal portfolio website that is has following:
 
 ## Link to Deployed Application
 
-Live: https://github.com/jamesgli520/Portfolio
+Live: https://jamesgli520.github.io/Portfolio/
 
 Github repository: https://github.com/jamesgli520/Portfolio
 
