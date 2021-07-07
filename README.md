@@ -19,9 +19,9 @@ This is a personal portfolio website that is has following:
 
 ## Link to Deployed Application
 
-Live: https://jamesgli520.github.io/Homework-01-Code-Refactor/
+Live: https://jamesgli520.github.io/Portfolio/
 
-Github repository: https://github.com/jamesgli520/Homework-01-Code-Refactor
+Github repository: https://github.com/jamesgli520/Portfolio
 
 ## License & copyright
 
