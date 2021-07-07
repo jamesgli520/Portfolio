@@ -58,6 +58,12 @@ h2{
     font-size: 35px;
 }
 
+/* select the elements with following class name and set them to flex model */
+.about-me, .project, .contact-me{
+    display: flex;
+    
+}
+
 /* select all p tag element in a parent element which has class name .about-me
 has following layout*/
 .about-me p{
@@ -67,12 +73,6 @@ has following layout*/
     border: 2px solid white;
     border-radius: 10px;
 
-}
-
-/* select the elements with following class name and set them to flex model */
-.about-me, .project, .contact-me{
-    display: flex;
-    
 }
 
 /* select the element with class name project has following layout */
@@ -160,10 +160,261 @@ or third-image-container have following layout */
     height: 300px;
 }
 
-/* @media screen and (max-width: 992px) {
+/*Layout of footer*/
+.footer {
+    /* padding extra space with the elemnt */
+    padding: 30px;
+    /* the floating element are not allowed on left and right side */
+    clear: both;
+    /* element content has following font family */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* set the horizontal alignment of the content inside a block element (div is block element) */
+    /* set to center  */
+    text-align: center;
+}
+
+@media screen and (min-width: 1485px) {
     body{
-        flex: 0 0 20%;
-        
+        background-color: black;
+    };
+
+    .header li{
+        display: block;
     }
-} */
+
+    .about-me{
+        display: block;
+
+    }
+
+    .first-image-container img{
+        width: 1300px;
+    }
+
+    .second-image-container img,
+    .third-image-container img{
+        width: 625px;
+    }
+    
+    
+
+   .contact-me li{
+       border: none;
+   }
+
+   #a{
+    display: block;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body{
+        background-color: black;
+    };
+
+    .header li{
+        display: block;
+    }
+
+    .about-me{
+        display: block;
+
+    }
+
+    .first-image-container img{
+        width: 1300px;
+    }
+
+    .second-image-container img,
+    .third-image-container img{
+        width: 625px;
+    }
+    
+    
+
+   .contact-me li{
+       border: none;
+   }
+
+   #a{
+    display: block;
+    }
+}
+
+
+    
+    
+
+
+/*769px or larger and 1024px or smaller */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        background-color: gray;
+    };
+
+    .header li{
+        display: block;
+    }
+
+    .about-me{
+        display: block;
+
+    }
+
+    .first-image-container img{
+        width: 620px;
+        height: 410px;
+    }
+    .second-image-container Img,
+    .third-image-container Img{
+        width: 420px;
+        height: 210px;
+    }
+
+    .first-image-container{
+        margin-top: 50px;
+    }
+
+    .second-image-container,
+    .third-image-container{
+        margin-left: 172px;
+    }
+    
+    .second-image-container img,
+    .second-image-title{
+        margin-left: 0px;
+    } 
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .contact-me h2{
+       align-items: center;
+   }
+
+   .contact-me li{
+       margin-left: 50px;
+       border: none;
+   }
+
+   #a{
+    display: block;
+    }
+}
+
+
+/*481px or larger and 768px or smaller */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        background-color: purple;
+    };
+
+    .header li{
+        display: block;
+    }
+
+    .about-me{
+        display: block;
+
+    }
+
+    .first-image-container img,
+    .second-image-container Img,
+    .third-image-container Img{
+        width: 420px;
+        height: 210px;
+    }
+
+    .first-image-container{
+        margin-top: 50px;
+    }
+
+    .first-image-container,
+    .second-image-container,
+    .third-image-container{
+        margin-left: 50px;
+    }
+    
+    .second-image-container img,
+    .second-image-title{
+        margin-left: 0px;
+    } 
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .contact-me h2{
+       align-items: center;
+   }
+
+   .contact-me li{
+       margin-left: 0px;
+       border: none;
+   }
+
+   #a{
+    display: block;
+    }
+}
+
+/*320px or larger and 480px or smaller */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-color: red;
+    };
+
+    .header li{
+        display: block;
+    }
+
+    .about-me{
+        display: block;
+
+    }
+
+    .first-image-container img,
+    .second-image-container Img,
+    .third-image-container Img{
+        width: 420px;
+        height: 210px;
+    }
+
+    .first-image-container{
+        margin-top: 50px;
+    }
+
+    .first-image-container,
+    .second-image-container,
+    .third-image-container{
+        margin-left: 50px;
+    }
+    
+    .second-image-container img,
+    .second-image-title{
+        margin-left: 0px;
+    } 
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+   }
+
+   .contact-me h2{
+       align-items: center;
+   }
+
+   .contact-me li{
+       margin-left: -50px;
+       border: none;
+   }
+
+   #a{
+    display: block;
+    }
+}
+
 
