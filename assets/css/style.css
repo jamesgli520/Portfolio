@@ -10,20 +10,12 @@ body{
 }
 
 /* The header element has class name header*/
-/*  display in flex mode*/
-/* jutify content to have space between element */
 .header{
-    display: flex;
-    justify-content: space-between;
     color: white;
 }
 
 /* select all li tag in the element with class name header has following properties */
-/* displayed in inline block allow to set margin, padding, and width height as needed */
 .header li{
-    display: inline-block;
-    padding: 0px;
-    margin: 50px 0px 0px 50px;
     font-size: 25px;
     border: 2px solid white;
     border-radius: 10px;
@@ -58,82 +50,14 @@ h2{
     font-size: 35px;
 }
 
-/* select the elements with following class name and set them to flex model */
-.about-me, .project, .contact-me{
-    display: flex;
-    
-}
 
 /* select all p tag element in a parent element which has class name .about-me
 has following layout*/
 .about-me p{
-    display: inline-block;
     font-size: 25px;
-    margin: 0px 50px;
     border: 2px solid white;
     border-radius: 10px;
 
-}
-
-/* select the element with class name project has following layout */
-.project{
-    /* if flex items can not fit in one line they are focred onto multiple lines */
-    flex-wrap: wrap;
-}
-
-
-/* the element with class name .first-image-container */
-.first-image-container{
-    /* set position to relative with 50px margin to the left */
-    position:relative;
-    margin-left: 50px;
-}
-
-/* the element with class name .second-image-container */
-.second-image-container{
-    /* set position to relative with 172px margin to the left and 50 margin on top */
-    position:relative;
-    margin-left: 172px;
-    margin-top: 50px;
-}
-
-/* the element with class name .third-image-container */
-.third-image-container{
-    /* set position to relative with 50px margin to the left and 50 margin on top */
-    position:relative;
-    margin-left: 50px;
-    margin-top: 50px;
-
-}
-/* the elements with class name .first-image-title, .second-image-title or third-image-title
-have folllwing layout*/
-.first-image-title, 
-.second-image-title, 
-.third-image-title{
-    /* set position to absolute  */ 
-    position: absolute;
-    bottom: 0px;
-    font-size: 25px;
-    background-color: black;
-    
-}
-
-/*select the img element of a parent element which has class name .first-image-container
-has following layout */
-.first-image-container Img{
-    /* set img display to inline block */
-    display: inline-block;
-    width: 1200px;
-    height: 600px;
-}
-
-/*select the img element of a parent element which has class name .second-image-container
-or third-image-container have following layout */
-.second-image-container Img,
-.third-image-container Img{
-    display: inline-block;
-    width: 575px;
-    height: 300px;
 }
 
 /* the pesudo class hover */
@@ -144,10 +68,8 @@ or third-image-container have following layout */
     box-shadow: 0 0 50px white;
 }
 
-/* select any li element with class name contact-me set margin left to 50px*/
+/* select any li element with class name contact-me*/
 .contact-me li{
-    display: inline;
-    margin-left: 50px;
     border: 2px solid white;
     border-radius: 10px;
     font-size: 25px;
@@ -173,247 +95,458 @@ or third-image-container have following layout */
     text-align: center;
 }
 
-@media screen and (min-width: 1485px) {
-    body{
-        background-color: black;
-    };
-
-    .header li{
-        display: block;
-    }
-
-    .about-me{
-        display: block;
-
-    }
-
-    .first-image-container img{
-        width: 1300px;
-    }
-
-    .second-image-container img,
-    .third-image-container img{
-        width: 625px;
-    }
-    
-    
-
-   .contact-me li{
-       border: none;
-   }
-
-   #a{
-    display: block;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    body{
-        background-color: black;
-    };
-
-    .header li{
-        display: block;
-    }
-
-    .about-me{
-        display: block;
-
-    }
-
-    .first-image-container img{
-        width: 1300px;
-    }
-
-    .second-image-container img,
-    .third-image-container img{
-        width: 625px;
-    }
-    
-    
-
-   .contact-me li{
-       border: none;
-   }
-
-   #a{
-    display: block;
-    }
-}
-
-
-    
-    
-
-
-/*769px or larger and 1024px or smaller */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    body{
-        background-color: gray;
-    };
-
-    .header li{
-        display: block;
-    }
-
-    .about-me{
-        display: block;
-
-    }
-
-    .first-image-container img{
-        width: 620px;
-        height: 410px;
-    }
-    .second-image-container Img,
-    .third-image-container Img{
-        width: 420px;
-        height: 210px;
-    }
-
-    .first-image-container{
-        margin-top: 50px;
-    }
-
-    .second-image-container,
-    .third-image-container{
-        margin-left: 172px;
-    }
-    
-    .second-image-container img,
-    .second-image-title{
-        margin-left: 0px;
-    } 
-
-    .contact-me{
+/* 600px and down */
+@media screen and (max-width:600px) {
+    header{
         display: flex;
         flex-direction: column;
-   }
-
-   .contact-me h2{
-       align-items: center;
-   }
-
-   .contact-me li{
-       margin-left: 50px;
-       border: none;
-   }
-
-   #a{
-    display: block;
     }
-}
-
-
-/*481px or larger and 768px or smaller */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    body{
-        background-color: purple;
-    };
 
     .header li{
-        display: block;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
     }
 
-    .about-me{
-        display: block;
+    .about-me p{
+        width: 450px;
+    }
 
+    .project{
+        display: flex;
+        flex-direction: column;
     }
 
     .first-image-container img,
-    .second-image-container Img,
-    .third-image-container Img{
-        width: 420px;
-        height: 210px;
-    }
-
-    .first-image-container{
-        margin-top: 50px;
+    .second-image-container img,
+    .third-image-container img{
+        width: 450px;
+        height: 225px;
     }
 
     .first-image-container,
     .second-image-container,
     .third-image-container{
-        margin-left: 50px;
+        position: relative;
     }
-    
-    .second-image-container img,
-    .second-image-title{
-        margin-left: 0px;
-    } 
+
+    .first-image-title,
+    .second-image-title,
+    .third-image-title{
+        position:absolute;
+        bottom: 5px;
+        background-color: black;
+    }
 
     .contact-me{
         display: flex;
         flex-direction: column;
-   }
 
-   .contact-me h2{
-       align-items: center;
-   }
+    }
 
-   .contact-me li{
-       margin-left: 0px;
-       border: none;
-   }
+    #phone{
+        width: 357px;
+    }
 
-   #a{
-    display: block;
+    #email{
+        width: 388px;
+    }
+
+    #github-ID{
+        width: 87px;
+    }
+
+    #linkedin-ID{
+        width: 108px;
     }
 }
 
-/*320px or larger and 480px or smaller */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    body{
-        background-color: red;
-    };
+/* 600px and up */
+@media screen and (min-width:600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
 
     .header li{
-        display: block;
+        display: inline-block;
+        margin-left: 15px;
     }
-
+    
     .about-me{
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me p{
+        width: 600px;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-image-container img{
+        width: 650px;
+        height: 425px;
 
     }
 
-    .first-image-container img,
-    .second-image-container Img,
-    .third-image-container Img{
-        width: 420px;
-        height: 210px;
-    }
-
-    .first-image-container{
-        margin-top: 50px;
+    .second-image-container img,
+    .third-image-container img{
+        width: 450px;
+        height: 225px;
     }
 
     .first-image-container,
     .second-image-container,
     .third-image-container{
-        margin-left: 50px;
+        position: relative;
     }
-    
-    .second-image-container img,
-    .second-image-title{
-        margin-left: 0px;
-    } 
+
+    .first-image-title,
+    .second-image-title,
+    .third-image-title{
+        position:absolute;
+        bottom: 5px;
+        background-color: black;
+    }
 
     .contact-me{
         display: flex;
         flex-direction: column;
-   }
 
-   .contact-me h2{
-       align-items: center;
-   }
+    }
+    #phone{
+        width: 357px;
+    }
 
-   .contact-me li{
-       margin-left: -50px;
-       border: none;
-   }
+    #email{
+        width: 388px;
+    }
 
-   #a{
-    display: block;
+    #github-ID{
+        width: 87px;
+    }
+
+    #linkedin-ID{
+        width: 108px;
+    }
+}
+
+/* 768px and up */
+@media screen and (min-width:768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header li{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me p{
+        width: 768px;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-image-container img{
+        width: 650px;
+        height: 425px;
+
+    }
+
+    .second-image-container img,
+    .third-image-container img{
+        width: 450px;
+        height: 225px;
+    }
+
+    .first-image-container,
+    .second-image-container,
+    .third-image-container{
+        position: relative;
+    }
+
+    .first-image-title,
+    .second-image-title,
+    .third-image-title{
+        position:absolute;
+        bottom: 5px;
+        background-color: black;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #phone{
+        width: 357px;
+    }
+
+    #email{
+        width: 388px;
+    }
+
+    #github-ID{
+        width: 87px;
+    }
+
+    #linkedin-ID{
+        width: 108px;
+    }
+}
+
+/* 992px and up */
+@media screen and (min-width:992px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header li{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me p{
+        width: 900px;
+    }
+    .project{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* line break */
+    .project h2{
+        width: 10000px
+    }
+
+    .first-image-container img{
+        width: 900px;
+        height: 500px;
+
+    }
+    
+    .second-image-container img,
+    .third-image-container img{
+        width: 450px;
+        height: 250px;
+    }
+
+    .first-image-container,
+    .second-image-container,
+    .third-image-container{
+        position: relative;
+    }
+
+    .first-image-title,
+    .second-image-title,
+    .third-image-title{
+        position:absolute;
+        bottom: 5px;
+        background-color: black;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #phone{
+        width: 357px;
+    }
+
+    #email{
+        width: 388px;
+    }
+
+    #github-ID{
+        width: 87px;
+    }
+
+    #linkedin-ID{
+        width: 108px;
+    }
+}
+
+/* 1200px and up */
+@media screen and (min-width:1200px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header li{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me p{
+        width: 1100px;
+    }
+    .project{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* line break */
+    .project h2{
+        width: 10000px
+    }
+
+    .first-image-container img{
+        width: 1100px;
+        height: 700px;
+
+    }
+    
+    .second-image-container img,
+    .third-image-container img{
+        width: 550px;
+        height: 350px;
+    }
+
+    .first-image-container,
+    .second-image-container,
+    .third-image-container{
+        position: relative;
+    }
+
+    .first-image-title,
+    .second-image-title,
+    .third-image-title{
+        position:absolute;
+        bottom: 5px;
+        background-color: black;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #phone{
+        width: 357px;
+    }
+
+    #email{
+        width: 388px;
+    }
+
+    #github-ID{
+        width: 87px;
+    }
+
+    #linkedin-ID{
+        width: 108px;
+    }
+}
+
+/* 1750px and up */
+@media screen and (min-width:1750px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header li{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me p{
+        width: 1100px;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* line break */
+    .project h2{
+        width: 10000px
+    }
+
+    .first-image-container img{
+        width: 1100px;
+        height: 700px;
+
+    }
+    
+    .second-image-container img,
+    .third-image-container img{
+        width: 550px;
+        height: 350px;
+    }
+
+    .first-image-container,
+    .second-image-container,
+    .third-image-container{
+        position: relative;
+    }
+
+    .first-image-title,
+    .second-image-title,
+    .third-image-title{
+        position:absolute;
+        bottom: 5px;
+        background-color: black;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #phone{
+        width: 357px;
+    }
+
+    #email{
+        width: 388px;
+    }
+
+    #github-ID{
+        width: 87px;
+    }
+
+    #linkedin-ID{
+        width: 108px;
     }
 }
 
